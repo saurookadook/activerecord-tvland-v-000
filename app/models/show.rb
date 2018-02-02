@@ -3,6 +3,6 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def build_network(netw_hash)
-    self.network.call_letters = hash.values.first
+    self.network.create(netw_hash)
   end
 end
