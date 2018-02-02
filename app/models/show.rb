@@ -4,6 +4,6 @@ class Show < ActiveRecord::Base
 
   def build_network(netw_hash)
     network = Network.create(netw_hash)
-    self.network.create(netw_hash)
+    self.network_id
   end
 end
