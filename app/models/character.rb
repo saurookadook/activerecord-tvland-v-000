@@ -7,7 +7,7 @@ class Character < ActiveRecord::Base
   end
 
   def build_show(show_hash)
-    new_show = Show.find_by(show_hash)
+    show = Show.find_by(show_hash)
     self.show_id = new_show.id
   end
 end
