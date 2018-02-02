@@ -3,6 +3,7 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def build_network(netw_hash)
+    network = Network.create(netw_hash)
     self.network.create(netw_hash)
   end
 end
