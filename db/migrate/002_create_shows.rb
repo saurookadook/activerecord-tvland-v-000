@@ -9,6 +9,7 @@ class CreateShows < ActiveRecord::Migration[4.2]
       t.string :genre
       t.string :day
       t.string :season
+      t.integer :network_id
     end
   end
 end
