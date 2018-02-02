@@ -8,6 +8,7 @@ class Character < ActiveRecord::Base
 
   def build_show(show_hash)
     show = Show.find_by(show_hash)
+    binding.pry
     self.show_id = show.id
     self.show
   end
