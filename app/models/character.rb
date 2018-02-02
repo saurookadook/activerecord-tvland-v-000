@@ -7,7 +7,7 @@ class Character < ActiveRecord::Base
   end
 
   def build_show(show_hash)
-    binding.pry
+    new_show = Show.create(show_hash)
     self.show.create(show_hash)
   end
 end
