@@ -7,6 +7,6 @@ class Character < ActiveRecord::Base
   end
 
   def build_show(hash)
-    self.show.name = hash.values.first
+    self.show.create(hash.values.first)
   end
 end
